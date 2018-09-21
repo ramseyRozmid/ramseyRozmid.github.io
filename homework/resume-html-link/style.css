@@ -53,5 +53,40 @@ h3 {
 .resume {
   width: 800px;
   height: 1200px;
+}
 
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+  .logos {
+    margin: 50px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #instagram-logo {
+    padding-top: 40px;
+  }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+  .logos {
+    margin: 50px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #instagram-logo {
+    padding-top: 40px;
+  }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+  .logos {
+    margin: 50px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #instagram-logo {
+    padding-top: 40px;
+  }
 }
