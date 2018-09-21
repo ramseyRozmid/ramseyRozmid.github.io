@@ -1,0 +1,57 @@
+body {
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+h3 {
+  font-family: 'Dosis', sans-serif;
+}
+
+#faceshot {
+  margin-top: 25px;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+}
+
+.logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#linkedin-logo {
+  padding-top: 50px;
+  height: 56px;
+  width: 205px;
+}
+
+#github-logo {
+  padding-top: 50px;
+  height: 67px;
+  width: 200px;
+}
+
+#twitter-logo {
+  padding-top: 65px;
+  height: 38px;
+  width: 200px;
+}
+
+#instagram-logo {
+  height: 157px;
+  width: 162px;
+}
+
+.resume {
+  width: 800px;
+  height: 1200px;
+
+}
