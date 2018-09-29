@@ -13,6 +13,7 @@ h2 {
 h3 {
   font-family: 'Dosis', sans-serif;
 }
+
 p {
   font-family: 'Titillium Web', sans-serif;
   font-size: 18px;
@@ -41,25 +42,23 @@ p {
 }
 
 .logos {
+  align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
 #linkedin-logo {
-  padding-top: 40px;
   height: 56px;
   width: 205px;
 }
 
 #github-logo {
-  padding-top: 40px;
   height: 67px;
   width: 200px;
 }
 
 #twitter-logo {
-  padding-top: 55px;
   height: 38px;
   width: 200px;
 }
@@ -70,13 +69,11 @@ p {
 }
 
 .resume {
-  position: relative;
   margin: 50px auto;
 
   border-style: solid;
   border-width: thin;
   border-color: darkgrey;
-  overflow: hidden;
 
   width: 800px;
   height: 1200px;
@@ -84,7 +81,6 @@ p {
 
 #resume-img {
   max-width: 100%;
-  max-height: 100%;
 }
 
 /* ---------- Responsive Web Design Media Tags ---------- */
@@ -105,9 +101,8 @@ p {
   }
 }
 
-
 /* Smartphones (landscape) ----------- */
-@media only screen and (min-width : 321px) and (max-width : 767){
+@media only screen and (min-width : 321px) and (max-width : 767px){
   .logos {
     margin: 50px;
     display: flex;
