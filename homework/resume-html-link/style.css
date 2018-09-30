@@ -37,8 +37,12 @@ p {
   font-weight: 500;
 }
 
-#project-links {
-  margin-top: -15px;
+.projects-h3 {
+  margin-bottom: 0;
+}
+
+#link-one #link-two #link-three {
+  text-align: center;
 }
 
 .logos {
