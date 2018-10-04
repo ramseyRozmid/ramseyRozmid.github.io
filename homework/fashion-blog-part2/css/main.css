@@ -1,60 +1,116 @@
+/* Global CSS */
 body {
   text-align: left;
-  width: 720px;
+  width: 1080px;
   padding: 54px;
   border-left: solid 6px #dddddd;
-  color: #444444;
+  color: #444;
   font-family: "Lato", sans-serif;
+  font-size: 18px;
   line-height: 1.5;
+  margin: 0;
 }
 
-h1 {
-  color: #dd0000;
-  font-weight: lighter;
-  font-size: 48px;
-  margin-bottom: 0;
+/* Start of Global anchor CSS */
+a {
+  color: #d00;
+  text-decoration: none;
 }
 
-h2 {
-  color: #000;
-  font-weight: lighter;
-  margin-top: 0;
-  margin-bottom: 2px;
+a:hover {
+  color: #a00;
+}
+/* End of Global anchor CSS */
+
+/* Start of Header CSS */
+.header-h1, .header-h2 {
+  display: inline-block;
+  margin: 0;
+}
+
+.header-h1 {
+  color: #d00;
+  font-size: 54px;
+  font-weight: 300;
+}
+
+.header-h1:hover {
+  color: #a00;
+}
+
+.header-h2 {
+  color: #888;
+  font-size: 27px;
+  font-weight: 300;
+}
+/* End of Header CSS */
+
+/* Start of Nav CSS */
+.top-nav {
+  background: #000;
+  display: flex;
+  justify-content: space-around;
 }
 
 .top-nav a {
-  font-size: 20px;
-  margin-right: 18px;
-  color: #dddddd;
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
 }
 
 .top-nav a:hover {
-  color: #aa0000;
+  color: #a00;
+  background: #900;
+}
+/* End of Nav CSS */
+
+/* CSS for left floating section */
+section {
+  float: left;
+  width: 700px;
+  margin-right: 20px;
 }
 
-article {
+/* Adds border to the bottom of element */
+article, .aside-about-us, .aside-img {
   border-bottom: solid 1px #cccccc;
   margin: 40px 0;
 }
 
+/* Date CSS */
 time {
   color: #cccccc;
   font-size: 36px;
   margin-top: 50px;
+  font-weight: 300;
 }
 
-img {
-  width: 720px;
+/* Left Float Section IMG CSS */
+section img {
+  width: 700px;
 }
 
+/* Start of Left Float Article CSS */
 article h3 {
   color: #000;
   font-size: 36px;
-  font-weight: lighter;
+  font-weight: 300;
   margin: 2px;
 }
 
-article a {
+article h3:hover {
+  color: #d00;
+}
+
+article p::first-letter {
+  font-size: 108px;
+  line-height: 1;
+  color: #cccccc;
+}
+/* End of of Left Float Article CSS */
+
+/* Makes the "Continues.." & "More.." links right aligned */
+.link-right {
   display: flex;
   justify-content: flex-end;
   text-decoration: none;
@@ -63,10 +119,33 @@ article a {
   margin-bottom: 20px;
 }
 
+/* Start of Right Float Sidebar CSS */
+aside {
+  float: right;
+  width: 350px;
+  margin-left: 10px;
+}
+
+aside h4 {
+  color: #888;
+  font-weight: bold;
+}
+
+aside img {
+  padding-bottom: 30px;
+}
+
+.please-center {
+  margin: 0 auto;
+}
+
+/* Clears Section and Sidebar Floats */
 footer {
+  clear: both;
   margin-top: 20px;
 }
 
+/* Start of Footer CSS */
 footer a {
   color: #dd0000;
   font-size: 18px;
@@ -80,3 +159,4 @@ footer a:hover {
 footer h4 {
   color: #bbbbbb;
 }
+/* End of Footer CSS */
