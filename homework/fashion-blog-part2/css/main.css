@@ -131,11 +131,8 @@ aside h4 {
   font-weight: bold;
 }
 
-aside img {
-  padding-bottom: 30px;
-}
-
 .please-center {
+  padding-bottom: 30px;
   margin: 0 auto;
 }
 
