@@ -42,16 +42,12 @@ p {
   padding: 10px;
 }
 
-.maui {
+.maui, .aspen {
   background-color: rgb(198,223,251);
 }
 
 .reykjavik {
   background-color: rgb(197,242,228);
-}
-
-.aspen {
-  background-color: rgb(198,223,251);
 }
 
 footer {
