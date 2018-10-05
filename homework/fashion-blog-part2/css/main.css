@@ -131,10 +131,13 @@ aside h4 {
   font-weight: bold;
 }
 
-.please-center {
+.ad-img {
   padding-bottom: 30px;
+  display: block;
   margin: 0 auto;
 }
+/* End of Right Float Sidebar CSS */
+
 
 /* Clears Section and Sidebar Floats */
 footer {
