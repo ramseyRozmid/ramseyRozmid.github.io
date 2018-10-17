@@ -4,7 +4,7 @@ $.ajax({
         type: "GET",
         success: function (parsedResponse, statusText, jqXhr) {
 
-            console.log(parsedResponse);
+            console.log(parsedResponse[0]);
 
         },
         error: function (error) {
