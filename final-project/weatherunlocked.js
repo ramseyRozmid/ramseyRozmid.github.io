@@ -6,6 +6,10 @@ $.ajax({
 
             console.log(parsedResponse);
 
+            document.querySelector("#day-snow").innerHTML = parsedResponse.newsnow_in
+            document.querySelector("#snow-at-base").innerHTML = parsedResponse.lowersnow_in
+            document.querySelector("#snow-at-summit").innerHTML = parsedResponse.uppersnow_in
+            document.querySelector("#percent-open").innerHTML = parsedResponse.pctopen
         },
         error: function (error) {
 
