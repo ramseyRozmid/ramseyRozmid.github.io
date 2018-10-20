@@ -1,4 +1,9 @@
-
+body {
+  /* background: url("ski-background-img.jpg");
+  background-size: cover; */
+  background-color: #17466E;
+  color: #F2F2FF;
+}
 /*///////////Search Box Styles//////////////*/
 input{
     border: none;
