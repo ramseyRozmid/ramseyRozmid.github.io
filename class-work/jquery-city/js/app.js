@@ -26,7 +26,7 @@
 
 function changeImage() {
   var source = $(this).attr('src')
-
+    console.log(this)
   $('#bigimage').attr('src',source)
 }
 
