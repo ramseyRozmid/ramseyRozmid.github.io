@@ -5,7 +5,7 @@ const app = express()
 
 app.use(express.static('public'))
 
-const API_KEY = 'cba0fd221579cf6003152d2b091dbc22'
+const API_KEY = '9840062fcd7aa695142761c413cf9a88'
 const DARKSKY_URL = 'https://api.darksky.net/forecast/' + API_KEY + '/37.8267,-122.4233'
 
 app.get('/', function(req, res) {

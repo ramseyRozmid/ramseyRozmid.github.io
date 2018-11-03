@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <title>Snow Before You Go</title>
+</head>
+<body>
+  <header>
+    <h1>Snow Before You Go</h1>
+  </header>
+
+  <div class="mountain-tile">
+
+      <h2>Mammoth Mountain</h2>
+
+      <div class="weather-data">
+        <p>Current Temperature: <span id="temp"><span>°F</p> <!-- Accuweather Param -->
+        <p>Current Weather: <span id="weather"><span></p> <!-- Accuweather Param -->
+        <p>Snowfall in last 24 hours: <span id="day-snow"><span></p> <!-- Weather Unlocked Param -->
+      </div>
+
+      <div class="mountain-stats">
+        <p>Snow level at Base: <span id="snow-at-base"><span>"</p> <!-- Weather Unlocked Param -->
+        <p>Snow level at Summit: <span id="snow-at-summit"><span>"</p> <!-- Weather Unlocked Param -->
+        <p>Percent of mountain open: <span id="percent-open"><span>%</p> <!-- Weather Unlocked Param -->
+      </div>
+
+      <div class="main">
+        <input type="text">
+        <input type="submit" value="Go">
+      </div>
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+  <script>
+    $.ajax({
+      url: '/weather',
+      success: function(response) {
+        console.log(response)
+      },
+      error: function(error) {
+        console.log(error)
+      }
+    })
+  </script>
+</body>
+</html>
