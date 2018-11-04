@@ -17,7 +17,8 @@ body {
 }
 
 .logo {
-  font-family: 'Doppio One', sans-serif;
+	margin-left: 20px;
+	font-family: 'Doppio One', sans-serif;
   align-content: center;
   color: rgb(56, 135, 214);
   font-size: 1.8em;
@@ -30,18 +31,18 @@ a {
 }
 
 ul {
-  margin: 0;
-  padding: 0;
   list-style: none;
+	margin: 0;
+  padding: 0;
 }
 
 .main-nav a {
-  font-family: 'Doppio One', sans-serif;
+	display: block;
+	font-family: 'Doppio One', sans-serif;
   padding: 10px 15px;
+	text-decoration: none;
 	text-transform: uppercase;
 	text-align: center;
-	display: block;
-  text-decoration: none;
 }
 
 .main-nav a {
@@ -66,7 +67,122 @@ h1 {
   text-align: center;
 }
 
-.mountain-tile {
+.container-div:hover {
+  cursor: pointer;
+}
+
+.container-div {
+	font-family: 'proxima-nova-soft', sans-serif;
+	font-size: 14px;
+	width: 350px;
+	padding: 0 25px;
+	box-sizing: border-box;
+}
+
+.mt-tile {
+  position: relative;
+  z-index: 1;
+  min-width: 270px;
+  height: 470px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s linear 0s;
+}
+.mt-tile:hover {
+  box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.3);
+}
+
+.mt-tile:hover .top-half-of-tile img {
+  transform: scale(1.1);
+  opacity: .6;
+}
+
+.top-half-of-tile {
+  background: #000000;
+  height: 400px;
+  overflow: hidden;
+}
+
+.temp {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1;
+  background: rgb(56, 135, 214);
+  width: 55px;
+  height: 55px;
+  padding: 17.5px 0;
+  border-radius: 100%;
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.temp .current {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.top-half-of-tile img {
+  display: block;
+  width: 100%;
+  transition: all 0.3s linear 0s;
+}
+
+.tile-content {
+  position: absolute;
+  bottom: 0;
+  background: #ffffff;
+  width: 100%;
+  padding: 20px 30px 30px 30px;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+.region {
+  position: absolute;
+  top: -36px;
+  left: 0;
+  background: rgb(56, 135, 214);
+  padding: 10px 15px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.mountain-name {
+  margin: 0;
+  padding: 0 0 10px;
+  color: #333333;
+  font-size: 26px;
+  font-weight: 700;
+	text-align: left;
+}
+
+.sub_title {
+  margin: 0;
+  padding: 0 0 5px 0;
+  color: rgb(56, 135, 214);
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.description {
+  color: #666666;
+  font-size: 14px;
+  line-height: 1.6em;
+}
+
+.sub-stats {
+  margin: 30px 0 0;
+  color: #999999;
+}
+
+.trails {
+  margin: 0 16px 0 0;
+}
+/* .mountain-tile {
   width: 250px;
   height: 250px;
   border: 1px;
@@ -78,7 +194,7 @@ h1 {
 
 .moutain-tile:hover {
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
+} */
 
 /*///////////Media Queries//////////////*/
 @media (min-width: 769px) {
