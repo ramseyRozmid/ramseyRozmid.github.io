@@ -11,34 +11,41 @@ body {
 	min-height: 100vh;
 }
 
+.logo img{
+	margin: 0;
+  height: 70px;
+}
+
+.logo {
+  font-family: 'Doppio One', sans-serif;
+  align-content: center;
+  color: rgb(56, 135, 214);
+  font-size: 1.8em;
+  display: flex;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-h2, h3, a {
-	color: #34495e;
-}
-
-a {
-	text-decoration: none;
-}
-
-.logo img{
-	margin: 0;
-  width: 70px;
-}
-
-.logo a, .main-nav a {
-	padding: 10px 15px;
+.main-nav a {
+  font-family: 'Doppio One', sans-serif;
+  padding: 10px 15px;
 	text-transform: uppercase;
 	text-align: center;
 	display: block;
+  text-decoration: none;
 }
 
 .main-nav a {
-	color: #34495e;
+	color: rgb(56, 135, 214);
 	font-size: .99em;
 }
 
@@ -52,6 +59,7 @@ a {
 	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
 	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+  display: flex;
 }
 
 h1 {
@@ -74,6 +82,7 @@ h1 {
 	}
 	}
 }
+
 
 @media (min-width: 1025px) {
 	.header {
