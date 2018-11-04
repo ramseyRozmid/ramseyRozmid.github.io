@@ -76,7 +76,6 @@ h1 {
 	font-size: 14px;
 	width: 350px;
 	padding: 0 25px;
-	box-sizing: border-box;
 }
 
 .mt-tile {
@@ -115,7 +114,6 @@ h1 {
   color: #ffffff;
   font-weight: 700;
   text-align: center;
-  box-sizing: border-box;
 }
 
 .temp .current {
@@ -135,7 +133,6 @@ h1 {
   background: #ffffff;
   width: 100%;
   padding: 20px 30px 30px 30px;
-  box-sizing: border-box;
   transition: 0.3s;
 }
 
