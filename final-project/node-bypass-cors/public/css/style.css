@@ -67,11 +67,11 @@ h1 {
   text-align: center;
 }
 
-.container-div:hover {
+.east-div:hover {
   cursor: pointer;
 }
 
-.container-div {
+.east-div {
 	font-family: 'proxima-nova-soft', sans-serif;
 	font-size: 14px;
 	width: 350px;
@@ -137,16 +137,18 @@ h1 {
   transition: 0.3s;
 }
 
-.region {
+.mt-logo {
   position: absolute;
-  top: -36px;
-  left: 0;
-  background: rgb(56, 135, 214);
+	top: -153px;
+	left: 0;
+	width: 100px;
+  background: rgba(255, 255, 255,.9);
   padding: 10px 15px;
   color: #ffffff;
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
+	border-bottom-right-radius: 15px;
 }
 
 .mountain-name {
