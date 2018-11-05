@@ -119,6 +119,7 @@ h1 {
 .temp .current {
   font-size: 20px;
   text-transform: uppercase;
+	word-spacing: -.2em;
 }
 
 .top-half-of-tile img {
