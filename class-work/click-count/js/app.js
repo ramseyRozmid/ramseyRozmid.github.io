@@ -34,6 +34,10 @@ function clickCount() {
     $('body').css('background-color', 'blue')
   }
 
+  else if (count === 20) {
+    $('body').addClass('rotate')
+  }
+
   else {
     $('body').css('background-color', 'black')
   }
