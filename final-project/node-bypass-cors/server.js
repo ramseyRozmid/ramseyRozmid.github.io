@@ -6,15 +6,20 @@ const app = express()
 app.use(express.static('public'))
 
 const API_KEY = '9840062fcd7aa695142761c413cf9a88'
-const DARKSKY_URL = 'https://api.darksky.net/forecast/' + API_KEY + '/37.8267,-122.4233'
+const DARKSKY_URL = 'https://api.darksky.net/forecast/' + API_KEY
 
 app.get('/', function(req, res) {
   res.send('index.html')
 })
 
-app.get('/weather', function(req, res) {
-  console.log('Getting Weather!')
-  axios.get(DARKSKY_URL)
+app.get('/weather/:lat/:lng', function(req, res) {
+  console.log('Getting Weather!', req.params)
+
+  const endpoint = `${DARKSKY_URL}/${req.params.lat},${req.params.lng}`
+
+  console.log('ENDPOINT', endpoint)
+
+  axios.get(endpoint)
     .then(function(response) {
       res.send(JSON.stringify(response.data))
     })
