@@ -67,7 +67,7 @@ h1 {
   text-align: center;
 }
 
-.east-div {
+.east-div, .west-div {
 	font-family: 'proxima-nova-soft', sans-serif;
 	font-size: 14px;
 	width: 100%;
@@ -75,7 +75,7 @@ h1 {
 	display: flex;
 }
 
-.east-div:hover {
+.east-div:hover, .west-div:hover {
   cursor: pointer;
 }
 
