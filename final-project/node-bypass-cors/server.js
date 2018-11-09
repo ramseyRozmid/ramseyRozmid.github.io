@@ -21,7 +21,7 @@ app.get('/weather/:lat/:lng', function(req, res) {
 
   axios.get(endpoint)
     .then(function(response) {
-      res.send(JSON.stringify(response.data))
+      res.send(response.data)
     })
 })
 

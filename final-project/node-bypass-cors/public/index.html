@@ -23,12 +23,13 @@
     <h1>Snow Before You Go</h1>
   </div>
 
+<!-- /////////////// East Mountain Section ///////// -->
 <div class="east-div">
-  <div class="mt-tile">
+  <div class="mt-tile" id='killington'>
     <!-- Killington Tile-->
     <div class="top-half-of-tile">
       <div class="temp">
-        <div class="current">1 °F
+        <div class="current">0 °F
         </div>
       </div>
       <img src="img/mountain-tile-imgs/killington-tile.jpg"/>
@@ -42,11 +43,11 @@
     </div>
   </div>
 
-  <div class="mt-tile">
+  <div class="mt-tile" id='stratton'>
     <!-- Stratton Tile-->
     <div class="top-half-of-tile">
       <div class="temp">
-        <div class="current">1 °F
+        <div class="current">0 °F
         </div>
       </div>
       <img src="img/mountain-tile-imgs/stratton-tile.jpeg"/>
@@ -60,25 +61,83 @@
     </div>
   </div>
 
-  <div class="mt-tile">
-    <!-- Stratton Tile-->
+  <div class="mt-tile" id='sugarbush'>
+    <!-- Sugarbush Tile-->
     <div class="top-half-of-tile">
       <div class="temp">
-        <div class="current">1 °F
+        <div class="current">0 °F
         </div>
       </div>
       <img src="img/mountain-tile-imgs/sugarbush-tile.jpg"/>
     </div>
     <div class="tile-content">
-      <img class="mt-logo" src="img/mountain-logos/sugarbush-logo.png" alt="Stratton Logo">
+      <img class="mt-logo" src="img/mountain-logos/sugarbush-logo.png" alt="Sugarbush Logo">
       <h1 class="mountain-name">Sugarbush</h1>
       <h2 class="sub_title">"Be Better Here"</h2>
       <p class="description">With two mountain areas separated by the Slide Brook Basin. It is one of the largest ski resorts in New England.</p>
       <div class="sub-stats"><span class="trails"><i class="fas fa-route"></i> 111 Trails</span><span class="acreage"><i class="fas fa-mountain"></i> 578 Acres </span></div>
     </div>
   </div>
-
 </div>
+
+  <div class="west-div">
+    <div class="mt-tile" id='mammoth'>
+      <!-- Mammoth Tile-->
+      <div class="top-half-of-tile">
+        <div class="temp">
+          <div class="current">0 °F
+          </div>
+        </div>
+        <img src="img/mountain-tile-imgs/mammoth-tile.jpg"/>
+      </div>
+      <div class="tile-content">
+        <img class="mt-logo" src="img/mountain-logos/mammoth-logo.png" alt="Mammoth Logo">
+        <h1 class="mountain-name">Mammoth</h1>
+        <h2 class="sub_title">Top of the Sierra</h2>
+        <p class="description">With an 11,053 foot summit, Mammoth has the highest lift-accessable terrain in California. Plus, legendary snow conditions.</p>
+        <div class="sub-stats"><span class="trails"><i class="fas fa-route"></i> 150 Trails</span><span class="acreage"><i class="fas fa-mountain"></i> 3500 Acres </span></div>
+      </div>
+    </div>
+
+    <div class="mt-tile" id='squaw'>
+      <!-- Squaw Tile-->
+      <div class="top-half-of-tile">
+        <div class="temp">
+          <div class="current">0 °F
+          </div>
+        </div>
+        <img src="img/mountain-tile-imgs/squaw-tile.png"/>
+      </div>
+      <div class="tile-content">
+        <img class="mt-logo" src="img/mountain-logos/squaw-logo.png" alt="Stratton Logo">
+        <h1 class="mountain-name">Squaw-Alpine</h1>
+        <h2 class="sub_title">"Tahoe's Finest"</h2>
+        <p class="description">Two mountains to choose from, one destination. Squaw's spirit of adventure makes it one of America’s greatest ski resorts. </p>
+        <div class="sub-stats"><span class="trails"><i class="fas fa-route"></i> 97 Trails</span><span class="acreage"><i class="fas fa-mountain"></i> 670 Acres </span></div>
+      </div>
+    </div>
+
+    <div class="mt-tile" id='june'>
+      <!-- June Mountain Tile-->
+      <div class="top-half-of-tile">
+        <div class="temp">
+          <div class="current">0 °F
+          </div>
+        </div>
+        <img src="img/mountain-tile-imgs/june-tile.jpg"/>
+      </div>
+      <div class="tile-content">
+        <img class="mt-logo" src="img/mountain-logos/june-logo.png" alt="June Logo">
+        <h1 class="mountain-name">June Mountain</h1>
+        <h2 class="sub_title">7 lifts, family fun!</h2>
+        <p class="description">Enjoy California's best family-friendly ski resort. June Mountain Ski Area offers world-class skiing with a local mountain feel.</p>
+        <div class="sub-stats"><span class="trails"><i class="fas fa-route"></i> 41 Trails</span><span class="acreage"><i class="fas fa-mountain"></i> 1500 Acres </span></div>
+      </div>
+    </div>
+
+  </div>
+
+
 
 <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h1>
 <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h1>
@@ -102,22 +161,82 @@
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
   <script>
-    // Killington Request
+    // Killington
     $.ajax({
-      url: '/weather/43.6045/72.8201',
+      url: '/weather/43.6045/-72.8201',
       success: function(response) {
-        console.log(response)
+
+        console.log(response.currently.temperature)
+        $('#killington .current').html(response.currently.temperature.toFixed(0) +'°F')
       },
       error: function(error) {
         console.log(error)
       }
     })
 
-    // mountain 2
+    // Stratton
     $.ajax({
-      url: '/weather/43.1134/72.9081',
+      url: '/weather/43.1134/-72.9081',
       success: function(response) {
-        console.log(response)
+
+        console.log(response.currently.temperature)
+        $('#stratton .current').html(response.currently.temperature.toFixed(0) +'°F')
+      },
+      error: function(error) {
+        console.log(error)
+      }
+    })
+
+    // Sugarbush
+    $.ajax({
+      url: '/weather/43.3025/-74.6729',
+      success: function(response) {
+
+        console.log(response.currently.temperature)
+        $('#sugarbush .current').html(response.currently.temperature.toFixed(0) +'°F')
+
+      },
+      error: function(error) {
+        console.log(error)
+      }
+    })
+
+    // Mammoth
+    $.ajax({
+      url: '/weather/37.6485/-118.9721',
+      success: function(response) {
+
+        console.log(response.currently.temperature)
+        $('#mammoth .current').html(response.currently.temperature.toFixed(0) +'°F')
+
+      },
+      error: function(error) {
+        console.log(error)
+      }
+    })
+
+    // Squaw
+    $.ajax({
+      url: '/weather/39.1970/-120.2357',
+      success: function(response) {
+
+        console.log(response.currently.temperature)
+        $('#squaw .current').html(response.currently.temperature.toFixed(0) +'°F')
+
+      },
+      error: function(error) {
+        console.log(error)
+      }
+    })
+
+    // June
+    $.ajax({
+      url: '/weather/37.7513/-119.0726',
+      success: function(response) {
+
+        console.log(response.currently.temperature)
+        $('#june .current').html(response.currently.temperature.toFixed(0) +'°F')
+
       },
       error: function(error) {
         console.log(error)
