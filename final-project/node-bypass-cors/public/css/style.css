@@ -186,6 +186,48 @@ h1 {
 	justify-content: space-between;
 }
 
+#my_popup {
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	margin: 1em;
+	min-height: 20px;
+	padding: 19px;
+	margin-bottom: 20px;
+	background-color: #f5f5f5;
+	border: 1px solid #e3e3e3;
+	border-radius: 4px;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+	display: flex;
+}
+
+#my_popup img {
+	width: 100%;
+}
+
+.my_popup_close {
+	display: inline-block;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.42857143;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	align-items: flex-end;
+	color: #333;
+	background-color: #fff;
+	border-color: #ccc;
+}
+
 /* .mountain-tile {
   width: 250px;
   height: 250px;
