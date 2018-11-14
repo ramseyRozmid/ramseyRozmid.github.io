@@ -99,6 +99,7 @@
       </div>
     </div>
 
+    <a class="my_popup_open" href="#squaw_popup">
     <div class="mt-tile" id='squaw'>
       <!-- Squaw Tile-->
       <div class="top-half-of-tile">
@@ -116,6 +117,7 @@
         <div class="sub-stats"><span class="trails"><i class="fas fa-route"></i> 97 Trails</span><span class="acreage"><i class="fas fa-mountain"></i> 670 Acres </span></div>
       </div>
     </div>
+    </a>
 
     <a class="my_popup_open" href="#my_popup">
     <div class="mt-tile" id='june'>
@@ -144,6 +146,19 @@
   <div id="my_popup">
 
     <h1>Content H1</h1>
+    <h2>Here is some H2 content</h2>
+    <p>Here is some paragraph content</p>
+    <img src="img/mountain-tile-imgs/june-tile.jpg"/>
+
+    <!-- Add an optional button to close the popup -->
+    <button class="my_popup_close">Close</button>
+
+  </div>
+
+  <!-- Squaw Popup Content -->
+  <div id="squaw_popup">
+
+    <h1>Squaw Squaw Squaw</h1>
     <h2>Here is some H2 content</h2>
     <p>Here is some paragraph content</p>
     <img src="img/mountain-tile-imgs/june-tile.jpg"/>
@@ -273,6 +288,8 @@
 
     // Initialize the plugin
     $('#my_popup').popup();
+    $('#squaw_popup').popup();
+
 
   });
 </script>
