@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <link rel='icon' href='img/logo/logo.png' type='image/x-icon'/ >
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Doppio+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Doppio+One|Archivo" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" type="text/css">
   <title>Snow Before You Go</title>
 </head>
@@ -20,7 +20,7 @@
   </header>
 
   <div class="title">
-    <h1>Snow Before You Go</h1>
+    <h1>The #1 snow report website for Ikon passholders</h1>
   </div>
 
 <!-- /////////////// East Mountain Section ///////// -->
@@ -99,7 +99,7 @@
       </div>
     </div>
 
-    <a class="my_popup_open" href="#squaw_popup">
+    <a class="squaw_popup_open" href="#squaw_popup">
     <div class="mt-tile" id='squaw'>
       <!-- Squaw Tile-->
       <div class="top-half-of-tile">
@@ -119,7 +119,7 @@
     </div>
     </a>
 
-    <a class="my_popup_open" href="#my_popup">
+    <a class="initialism my_popup_open btn btn-success" href="#my_popup">
     <div class="mt-tile" id='june'>
       <!-- June Mountain Tile-->
       <div class="top-half-of-tile">
@@ -145,7 +145,7 @@
   <!-- June Mountain Popup Content -->
   <div id="my_popup">
 
-    <h1>Content H1</h1>
+    <h4>June Mountain</h1>
     <h2>Here is some H2 content</h2>
     <p>Here is some paragraph content</p>
     <img src="img/mountain-tile-imgs/june-tile.jpg"/>
@@ -158,7 +158,7 @@
   <!-- Squaw Popup Content -->
   <div id="squaw_popup">
 
-    <h1>Squaw Squaw Squaw</h1>
+    <h4>Squaw Squaw Squaw</h1>
     <h2>Here is some H2 content</h2>
     <p>Here is some paragraph content</p>
     <img src="img/mountain-tile-imgs/june-tile.jpg"/>
@@ -270,6 +270,7 @@
 
         console.log(response.currently.temperature)
         $('#june .current').html(response.currently.temperature.toFixed(0) +'°F')
+        $('#my-popup .june-popup-temp').html(response.currently.temperature.toFixed(0) +' °F')
 
       },
       error: function(error) {
@@ -283,16 +284,17 @@
   <!-- Include jQuery Popup Overlay -->
     <script src="https://cdn.rawgit.com/vast-engineering/jquery-popup-overlay/1.7.13/jquery.popupoverlay.js"></script>
 
-  <script>
-  $(document).ready(function() {
+    <script>
+      $(document).ready(function() {
+        $('#my_popup').popup();
+      })
+    </script>
 
-    // Initialize the plugin
-    $('#my_popup').popup();
-    $('#squaw_popup').popup();
-
-
-  });
-</script>
+    <script>
+      $(document).ready(function() {
+        $('#squaw_popup').popup();
+      })
+    </script>
 
 </body>
 </html>

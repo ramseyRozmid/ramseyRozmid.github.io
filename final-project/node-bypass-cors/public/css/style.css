@@ -65,6 +65,7 @@ ul {
 
 h1 {
   text-align: center;
+	font-family: 'Archivo', sans-serif;
 }
 
 .east-div, .west-div {
@@ -186,7 +187,7 @@ h1 {
 	justify-content: space-between;
 }
 
-#my_popup {
+#my_popup, #squaw_popup {
 	box-shadow: 0 0 10px rgba(0,0,0,0.3);
 	margin: 1em;
 	min-height: 20px;
@@ -199,8 +200,8 @@ h1 {
 	display: flex;
 }
 
-#my_popup img {
-	width: 100%;
+#my_popup img, #squaw_popup img{
+	width: 80%;
 }
 
 .my_popup_close {
