@@ -147,7 +147,7 @@
 
     <h4>June Mountain</h1>
     <h2>Here is some H2 content</h2>
-    <p>Here is some paragraph content</p>
+    <p class='june-popup-temp'>Here is some paragraph content</p>
     <img src="img/mountain-tile-imgs/june-tile.jpg"/>
 
     <!-- Add an optional button to close the popup -->
@@ -177,112 +177,12 @@
 
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.6/dist/loadingoverlay.min.js"></script>
-  <script type="text/javascript" src='js/loading-overlay.js'>
-
-  </script>
-
-  <script>
-    // Killington
-    $.ajax({
-      url: '/weather/43.6045/-72.8201',
-      success: function(response) {
-
-        console.log(response.currently.temperature)
-        $('#killington .current').html(response.currently.temperature.toFixed(0) +'°F')
-      },
-      error: function(error) {
-        console.log(error)
-      }
-    })
-
-    // Stratton
-    $.ajax({
-      url: '/weather/43.1134/-72.9081',
-      success: function(response) {
-
-        console.log(response.currently.temperature)
-        $('#stratton .current').html(response.currently.temperature.toFixed(0) +'°F')
-      },
-      error: function(error) {
-        console.log(error)
-      }
-    })
-
-    // Sugarbush
-    $.ajax({
-      url: '/weather/43.3025/-74.6729',
-      success: function(response) {
-
-        console.log(response.currently.temperature)
-        $('#sugarbush .current').html(response.currently.temperature.toFixed(0) +'°F')
-
-      },
-      error: function(error) {
-        console.log(error)
-      }
-    })
-
-    // Mammoth
-    $.ajax({
-      url: '/weather/37.6485/-118.9721',
-      success: function(response) {
-
-        console.log(response.currently.temperature)
-        $('#mammoth .current').html(response.currently.temperature.toFixed(0) +'°F')
-
-      },
-      error: function(error) {
-        console.log(error)
-      }
-    })
-
-    // Squaw
-    $.ajax({
-      url: '/weather/39.1970/-120.2357',
-      success: function(response) {
-
-        console.log(response.currently.temperature)
-        $('#squaw .current').html(response.currently.temperature.toFixed(0) +'°F')
-
-      },
-      error: function(error) {
-        console.log(error)
-      }
-    })
-
-    // June
-    $.ajax({
-      url: '/weather/37.7513/-119.0726',
-      success: function(response) {
-
-        console.log(response.currently.temperature)
-        $('#june .current').html(response.currently.temperature.toFixed(0) +'°F')
-        $('#my-popup .june-popup-temp').html(response.currently.temperature.toFixed(0) +' °F')
-
-      },
-      error: function(error) {
-        console.log(error)
-      }
-    })
-
-  </script>
-
-
-  <!-- Include jQuery Popup Overlay -->
+  <!-- Includes jQuery Popup Overlay CDN -->
     <script src="https://cdn.rawgit.com/vast-engineering/jquery-popup-overlay/1.7.13/jquery.popupoverlay.js"></script>
-
-    <script>
-      $(document).ready(function() {
-        $('#my_popup').popup();
-      })
-    </script>
-
-    <script>
-      $(document).ready(function() {
-        $('#squaw_popup').popup();
-      })
-    </script>
+  <!-- Includes jQuery Loading Overlay CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.6/dist/loadingoverlay.min.js"></script>
+  <script type="text/javascript" src='js/loading-overlay.js'></script>
+  <script type="text/javascript" src='js/darksky-true.js'></script>
 
 </body>
 </html>
