@@ -2,11 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  
+
   <link rel='icon' href='img/logo/logo.png' type='image/x-icon'/ >
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Doppio+One|Archivo" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/dropdown.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/transition.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/themes/default/assets/images/flags.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/flag.css">
   <link rel="stylesheet" href="css/style.css" type="text/css">
 
   <title>Snow Before You Go</title>
@@ -26,19 +29,35 @@
     <h1>The #1 snow report website for Ikon passholders</h1>
   </div>
 
-<div class="country-dropdown">
-  <div class="ui fluid search selection dropdown">
-    <input type="hidden" name="country">
-    <i class="dropdown icon"></i>
-    <div class="default text">Select Country</div>
-    <div class="menu">
-    <div class="item" data-value="us"><i class="us flag"></i>United States</div>
-      <div class="item" data-value="ca"><i class="ca flag"></i>Canada</div>
-      <div class="item" data-value="cl"><i class="cl flag"></i>Chile</div>
-      <div class="item" data-value="au"><i class="au flag"></i>Australia</div>
-      <div class="item" data-value="jp"><i class="jp flag"></i>Japan</div>
+  <div class="country-dropdown">
+    <div class="ui fluid search selection dropdown">
+      <input type="hidden" name="country">
+      <i class="dropdown icon"></i>
+      <div class="default text">Select Country</div>
+      <div class="menu">
+      <div class="item" data-value="us"><i class="us flag"></i>United States</div>
+        <div class="item" data-value="ca"><i class="ca flag"></i>Canada</div>
+        <div class="item" data-value="cl"><i class="cl flag"></i>Chile</div>
+        <div class="item" data-value="au"><i class="au flag"></i>Australia</div>
+        <div class="item" data-value="jp"><i class="jp flag"></i>Japan</div>
+      </div>
     </div>
   </div>
+
+<div class="region-dropdown">
+  <select class="ui search dropdown">
+    <option value="">Select Region</option>
+    <option value="usa-west">West</option>
+    <option value="usa-pac-nw">Pacific NW</option>
+    <option value="usa-rockies">Rockies</option>
+    <option value="usa-midwest">Midwest</option>
+    <option value="usa-east">East</option>
+    <option value="ca-west">West</option>
+    <option value="ca-east">East</option>
+    <option value="chile">All</option>
+    <option value="japan">All</option>
+    <option value="australia">All</option>
+  </select>
 </div>
 
 <!-- /////////////// East Mountain Section ///////// -->
@@ -203,11 +222,13 @@
 
   <script type="text/javascript" src='js/loading-overlay.js'></script>
   <script type="text/javascript" src='js/darksky-true.js'></script>
+
+  <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/dropdown.js'></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/transition.js"></script>
+  <script>$('.ui.dropdown').dropdown()</script>
   <!-- <script src="ui-dropdown-master/dropdown.js"></script>
   <script src="ui-dropdown-master/index.js"></script>
   <script src="ui-dropdown-master/package.js"></script> -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
-  <script>$('.ui.dropdown').dropdown()</script>
 
 </body>
 </html>
