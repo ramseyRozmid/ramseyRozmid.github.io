@@ -63,8 +63,8 @@ ul {
   display: flex;
 }
 
-.country-dropdown {
-	margin: 0 auto;
+.country-dropdown, .region-dropdown {
+	margin: 20px auto;
 	width: 20%;
 }
 
