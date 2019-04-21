@@ -201,7 +201,7 @@ h1 {
 	justify-content: space-between;
 }
 
-#my_popup, #squaw_popup {
+.tile-popup {
 	box-shadow: 0 0 10px rgba(0,0,0,0.3);
 	margin: 1em;
 	min-height: 20px;
@@ -211,11 +211,31 @@ h1 {
 	border: 1px solid #e3e3e3;
 	border-radius: 4px;
 	box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
-	display: flex;
+	align-items: center !important;
+	font-family: 'Archivo', sans-serif;
 }
 
-#my_popup img, #squaw_popup img{
-	width: 80%;
+.popup-header {
+	display: flex;
+	justify-content: space-around;
+	padding: 0 50px;
+	align-items: center;
+	border-bottom: 1px solid #e3e3e3;
+}
+
+/* .tile-popup h2 {
+	justify-content: space-between;
+} */
+
+.tile-popup h3 {
+	color: rgb(56, 135, 214);
+	font-weight: 400;
+	/* text-align: center; */
+}
+
+.tile-popup img {
+	width: 60%;
+
 }
 
 .my_popup_close {
@@ -241,6 +261,12 @@ h1 {
 	color: #333;
 	background-color: #fff;
 	border-color: #ccc;
+}
+
+figure {
+	margin: 5em auto;
+	width: 350px;
+	height: 150px;
 }
 
 /* .mountain-tile {
