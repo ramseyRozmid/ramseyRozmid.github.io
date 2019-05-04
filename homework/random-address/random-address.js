@@ -7,7 +7,7 @@
 // 10 E 21st St, New York, NY 10010
 
 let streetNum = [123, 456, 789, 100, 200, 300, 400];
-let streetName = ['Ashland', 'Fulton', 'Vesey', '5th Ave'];
+let streetName = ['Ashland', 'Fulton', 'Vesey', '5th'];
 let city = ['New York City', 'Mountain View', 'Boulder', 'San Francisco', 'Santa Monica'];
 let state = ['California', 'Colorado', 'New York'];
 let zip = ['11217', '94040', '91302', '91604', '80302'];
@@ -18,7 +18,7 @@ let randomCity = city[Math.floor(Math.random()*city.length)];
 let randomState = state[Math.floor(Math.random()*state.length)];
 let randomZip = zip[Math.floor(Math.random()*zip.length)];
 
-console.log(randomStreetNum + ' ' + randomSteetName + ', ' + randomCity + ', ' + randomState + ' ' + randomZip);
+console.log(randomStreetNum + ' ' + randomSteetName + ' Street, ' + randomCity + ', ' + randomState + ' ' + randomZip);
 
 // let randomStreet = () => {
 //   return console.log(streetNumber[Math.floor(Math.random()*streetNumber.length)]);
