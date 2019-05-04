@@ -2,22 +2,13 @@
 // Make sure your program can handle both singular and plural cases (bottle vs bottles)
 // Make sure you save your code. We will be using it in the future (class 07)
 
-let i = 99;
+let i;
 
-for (i = 99; i <=0; i--) {
-  if (i % 3 === 0 && i % 5 === 0) {
-    console.log('fizzbuzz');
-}
-  else if (i % 3 === 0) {
-    console.log('fizz');
-}
-  else if (i % 5 === 0) {
-    console.log('buzz');
+for (i = 99; i >0; i--) {
+  if (i === 1) {
+    console.log(`${i} bottle of beer on the wall, ${i} bottle of beer. Take one down and pass it around, ${i-1} bottles of beer on the wall.`);
 }
   else {
-    console.log(i);
+    console.log(`${i} bottles of beer on the wall, ${i} bottles of beer. Take one down and pass it around, ${i-1} bottles of beer on the wall.`);
 }
-}
-
-99 bottles of beer on the wall, 99 bottles of beer.
-Take one down and pass it around, 98 bottles of beer on the wall.
+};
