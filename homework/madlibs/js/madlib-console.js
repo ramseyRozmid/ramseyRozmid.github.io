@@ -8,13 +8,8 @@ let startupGenerator = ('A startup that is ' + startupX[random1] + ', but for ' 
 let favoriteStartup = [];
 
 $('#create').click(function() {
-$('#xForY').replaceWith(startupGenerator)
+$('#xForY').html(startupGenerator)
 });
-// $('#xForY').css({
-//   'color':'#000',
-//   'font-size':'12px',
-//   'line-height':'1.4',
-//   'font-family':'Helvetica, Arial, sans-serif'});
 
 $('#save').click(function() {
   favoriteStartup.push(startupGenerator)
