@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>A Few of My Favorite Things</title>
+</head>
+<body>
+  <h1>Working with the DOM</h1>
+
+  <h2>Favorite Things</h2>
+  <ul id="fav-list">
+    <li class="fav-thing">Dog bites</li>
+    <li class="fav-thing">Bee Stings</li>
+  </ul>
+
+  <form>
+    <input id="new-thing" />
+    <input id="new-thing-button" type="submit" onclick="validateInput(); addInput(); return false;" value="Create new thing"></submit>
+  </form>
+  <script>
+
+
+//  Independent Practice
+//
+// Making a favorites list: DOM manipulation
+//
+// - When the user clicks the submit button, take the value they've typed
+//   into the input box and add it to the list (remember: appendChild)
+
+
+function validateInput() {
+  let emptyCheck = document.getElementById("new-thing").value;
+
+  if (emptyCheck == null || emptyCheck == "")
+    alert("You must type in a value!")
+}
+
+function addInput() {
+  let input = document.getElementById("new-thing").value;
+  let newInput = document.querySelector('ul');
+  let addInput = document.createElement('li');
+  addInput.textContent = input;
+  newInput.appendChild(addInput);
+  document.getElementById("new-thing").value = ""
+}
+
+// - Also, when a new item is added to the list, clear the input box.
+
+// Bonus:
+// When they click submit without typing anything, alert the user
+// "you must type in a value!"
+//   (Hint: the `value` property of the input box, before anyone types in it,
+//   is the empty string.)
+
+
+  </script>
+</body>
+</html>
