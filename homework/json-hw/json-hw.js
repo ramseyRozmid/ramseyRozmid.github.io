@@ -16,25 +16,40 @@ let flickerObj = JSON.parse(jsonString);
 
 /*
 2. Iterate (this means 'use a loop') and do a console.log of each of the item titles
-with the date the photo was taken. The first console.log should return the following:
+with the date the photo was taken.
 
+The first console.log should return the following:
 "What a surprise in lyon. 2016-02-23T06:47:30-08:00"
 */
 
-for (let i in flickerObj) {
-  if (flickerObj(i))
-    {
-    console.log(`The photo was taken ${flickerObj.title[i]} at this time: ${flickerObj.date_taken[i]}`);
-  }
-}
 
-// for (let i in myDelorean) {
-//      // if (myDelorean.hasOwnProperty(i)
-//       {
-//          console.log(i + " is equal to " + myDelorean[i] + "\n");
-//      }
-//    }
+// console.log(Object.keys(jsonString)[5])
+//console.log(jsonString["items.date_taken"])
 //
+// for (let i in jsonString) {
+//   if (function jsonString[i]){
+//     console.log(`The photo was taken ${jsonString.title[i]} at this time: ${jsonString.date_taken[i]}`);
+//   }
+// }
+
+// for (let i = 0, l = jsonString.length; i < l; i++) {
+//     console.log(jsonString.title);
+//     // ...
+//   }
+
+for (let title in jsonString) {
+     if (jsonString.hasOwnProperty(title)
+      {
+         console.log(jsonString.title + " is equal to " + jsonString.title + "\n");
+     }
+   }
+
+//    for (var key in p) {
+//        if (p.hasOwnProperty(key)) {
+//            console.log(key + " -> " + p[key]);
+//        }
+//    }
+// //
 //
 // var triangle = {a: 1, b: 2, c: 3};
 //
@@ -55,10 +70,12 @@ for (let i in flickerObj) {
 // Output:
 // "obj.color = red"
 
-/*
-3. Create a new array called 'links'. Iterate through the items array in flickerObj and store the the links to each item in the 'links' array.
-*/
 
+//3. Create a new array called 'links'. Iterate through the items array in flickerObj and store the the links to each item in the 'links' array.
+
+// let links = [];
+//
+// flickerObj.push["flickerObj.items.links"]
 
 
 /*
