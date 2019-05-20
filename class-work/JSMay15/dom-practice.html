@@ -26,14 +26,6 @@
 // - When the user clicks the submit button, take the value they've typed
 //   into the input box and add it to the list (remember: appendChild)
 
-
-function validateInput() {
-  let emptyCheck = document.getElementById("new-thing").value;
-
-  if (emptyCheck == null || emptyCheck == "")
-    alert("You must type in a value!")
-}
-
 function addInput() {
   let input = document.getElementById("new-thing").value;
   let newInput = document.querySelector('ul');
@@ -41,6 +33,13 @@ function addInput() {
   addInput.textContent = input;
   newInput.appendChild(addInput);
   document.getElementById("new-thing").value = ""
+}
+
+function validateInput() {
+  let emptyCheck = document.getElementById("new-thing").value;
+
+  if (emptyCheck == null || emptyCheck == "")
+    alert("You must type in a value!")
 }
 
 // - Also, when a new item is added to the list, clear the input box.
