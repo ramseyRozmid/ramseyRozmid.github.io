@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div id="main">
+      <h1 id="header-title">This is our page</h1>
+      <h2 class="title">Our List</h2>
+
+      <ul class="list">
+        <li class="item">Item 1</li>
+        <li class="item">Item 2</li>
+        <li class="item">Item 3</li>
+        <li class="item">Item 4</li>
+      </ul>
+
+    </div>
+
+    <script type="text/javascript">
+
+      let headerTitle = document.getElementById('header-title')
+      headerTitle.innerHTML = "new hello"
+
+      let items = document.getElementsByClassName('item')
+      items[0].innerHTML = "new list name"
+
+      let title = document.querySelector(".title")
+      title.innerHTML = "new title"
+
+      let oddNum = document.querySelectorAll("li:nth-child(odd)")
+      let evenNum = document.querySelectorAll("li:nth-child(even)")
+
+      for (let i=0; i<oddNum.length; i++) {
+        oddNum[i].style.backgroundColor = "yellow"
+      }
+
+    </script>
+  </body>
+</html>

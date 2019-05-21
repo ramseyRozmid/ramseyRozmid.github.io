@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div id="main">
+      <h1 id="header-title">jQuery</h1>
+      <h2 class="title">Our List</h2>
+
+      <ul class="list">
+        <li class="item">Item 1</li>
+        <li class="item">Item 2</li>
+        <li class="item">Item 3</li>
+        <li class="item">Item 4</li>
+      </ul>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+
+    $("#header-title").html("changed JJJ")
+      // let headerTitle = document.getElementById('header-title')
+      // headerTitle.innerHTML = "new hello"
+
+    $(".item").html("new list name")
+      // let items = document.getElementsByClassName('item')
+      // items[0].innerHTML = "new list name"
+
+    $(".title").hide()
+      // let title = document.querySelector(".title")
+      // title.innerHTML = "new title"
+
+      // let oddNum = document.querySelectorAll("li:nth-child(odd)")
+      // let evenNum = document.querySelectorAll("li:nth-child(even)")
+      //
+      // for (let i=0; i<oddNum.length; i++) {
+      //   oddNum[i].style.backgroundColor = "yellow"
+      // }
+
+    </script>
+  </body>
+</html>

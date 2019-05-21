@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <h1>This is my h1</h1>
+    <h2>This is my h2</h2>
+
+    <p>I don't like paragraphs and want to change them</p>
+
+    <button class="btn" type="button" name="button">Press Me</button>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+
+      $( document ).ready(function() {
+        console.log( "ready!" );
+
+      $('.btn').click(function(){
+        alert('yay! You clicked me!')
+
+        $.ajax({
+          type:"GET",
+          url:"https://api.meetup.com/2/cities",
+          success: function(data) {
+            $('.text').text(JSON.stringify(data));
+          },
+          dataType: 'jsonp',
+        });
+
+  });
+
+
+      $('h1').html('this is my new h1')
+
+      $('h2').css('backgroundColor','yellow')
+
+})
+    </script>
+  </body>
+</html>
