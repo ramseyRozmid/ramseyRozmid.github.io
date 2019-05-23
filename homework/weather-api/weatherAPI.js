@@ -18,8 +18,6 @@ $.ajax({
   //log out the data
   console.log(dataResponse);
 
-  });
-
   $('.temp').html(dataResponse.main.temp)
 
   $('.cityForm').submit(function(p){
@@ -31,6 +29,10 @@ $.ajax({
       {fieldInput: fieldInput}
     ).done
     console.log(data)
+    console.log(userZip)
   })
+  });
+
+
 
 })
