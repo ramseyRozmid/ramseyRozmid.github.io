@@ -9,7 +9,7 @@ let token = ('&appid=3d86ff3747fab8d7d200519e32b435fe')
 $('.tempBtn').click(function(){
 
   let userZip = $('.cityInput').val()
-  console.log(userZip)
+  console.log(`UserZip variable is equal to ${userZip}`)
 
   $.ajax({
     method:'GET',
