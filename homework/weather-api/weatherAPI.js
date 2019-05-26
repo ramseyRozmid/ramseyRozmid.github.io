@@ -1,18 +1,19 @@
 $( document ).ready(function() {
     console.log( "ready!" )
 
-let userZip = $('.cityInput').val()
-
 let baseURL = ('https://cors-anywhere.herokuapp.com/https://api.openweathermap.org/data/2.5/weather?zip=')
 let token = ('&appid=3d86ff3747fab8d7d200519e32b435fe')
 
-let dataResponse
+  let dataResponse
 
-$('.tempBtn').submit(function(){
+$('.tempBtn').click(function(){
+
+  let userZip = $('.cityInput').val()
+  console.log(userZip)
 
   $.ajax({
     method:'GET',
-    url: `${baseURL} + ${userZip} + ${token}`,
+    url: `${baseURL} ${userZip} ${token}`,
     dataType: 'json'
   })
 
