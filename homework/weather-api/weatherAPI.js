@@ -3,16 +3,19 @@ $( document ).ready(function() {
 
 let userZip = $('.cityInput').val()
 
-let baseURL = ('https://cors-anywhere.herokuapp.com/https://samples.openweathermap.org/data/2.5/weather?zip=')
+let baseURL = ('https://cors-anywhere.herokuapp.com/https://api.openweathermap.org/data/2.5/weather?zip=')
 let token = ('&appid=3d86ff3747fab8d7d200519e32b435fe')
 
 let dataResponse
 
-$.ajax({
+$('.tempBtn').submit(function(){
+
+  $.ajax({
     method:'GET',
     url: `${baseURL} + ${userZip} + ${token}`,
     dataType: 'json'
   })
+
   .done(function(dataResponse){
 
   //log out the data
@@ -30,8 +33,9 @@ $.ajax({
     ).done
     console.log(data)
     console.log(userZip)
+    })
   })
-  });
+});
 
 
 
