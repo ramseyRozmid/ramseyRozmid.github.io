@@ -13,7 +13,7 @@ $('.tempBtn').click(function(){
 
   $.ajax({
     method:'GET',
-    url: `${baseURL} ${userZip} ${token}`,
+    url: `${baseURL}${userZip}${token}`,
     dataType: 'json'
   })
 
