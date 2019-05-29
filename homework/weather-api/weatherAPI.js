@@ -29,7 +29,7 @@ $('.tempBtn').click(function(){
 
   $('.temp').html(fTemp)
 
-  $('.cityForm').submit(function(p){
+  $('.zipForm').submit(function(p){
     p.preventDefault()
 
   })
