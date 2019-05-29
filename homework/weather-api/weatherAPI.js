@@ -8,7 +8,7 @@ let dataResponse
 
 $('.tempBtn').click(function(){
 
-  let userZip = $('.cityInput').val()
+  let userZip = $('.zipInput').val()
   console.log(`UserZip variable is equal to ${userZip}`)
 
   $.ajax({
