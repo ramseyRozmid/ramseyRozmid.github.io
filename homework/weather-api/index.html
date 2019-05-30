@@ -10,14 +10,17 @@
 
     <h2>Enter the zip code for the city you want to know the current temperature for:</h2>
 
+    <p>Note: Since you need to enter a valid zip, you can only enter numbers below!</p>
+
     <form class="zipForm" action="index.html" method="post">
-      <input class="zipInput"type="text" name="City" value="">
+      <input class="zipInput" maxlength="5" onkeypress="return isNumberKey(event)" type="text" name="City" value="">
       <button class="tempBtn" type="button" name="button">Find out the Temp!</button>
     </form>
 
     <h3>Current Temperature is: <span class="temp">0</span> Degrees Farenheit</h3>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="numbersOnly.js"></script>
     <script type="text/javascript" src="weatherAPI.js"></script>
 
   </body>
