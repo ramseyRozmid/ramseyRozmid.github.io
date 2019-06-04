@@ -22,6 +22,11 @@ $.LoadingOverlay("hide");
 //
 //
 //
+
+$('.logo').click(function() {
+    location.reload();
+});
+
 let redditURL = ('https://accesscontrolalloworiginall.herokuapp.com/https://www.reddit.com/top.json')
 
 let dataResponse
@@ -32,7 +37,7 @@ let dataResponse
     dataType: 'json',
     statusCode: {
     404: function() {
-      alert( "API Request Failed :(" );
+      alert("API Request Failed");
     }
   }
   })
