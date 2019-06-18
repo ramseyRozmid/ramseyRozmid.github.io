@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>React</title>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script
+      src="https://unpkg.com/react@16/umd/react.development.js"
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    ></script>
+  </head>
+  <body>
+    <h3>Above Root</h3>
+    <div id="root"></div>
+    <h3>Below Root</h3>
+
+    <script type="text/babel">
+
+      class App extends React.Component {
+
+      state = {
+        myNum: 0
+      }
+
+        pressButton = () => {
+
+          this.setState({
+            myNum: Math.floor(Math.random()*100)
+          })
+          console.log('hello from react')
+        }
+
+        render(){
+          return (
+            <div>
+              <h3>hello from React</h3>
+              <p>Your number: {this.state.myNum}</p>
+              <button onClick={this.pressButton}>Press Me</button>
+            </div>
+          )
+        }
+      }
+      ReactDOM.render(<App />, document.getElementById('root'));
+
+    </script>
+  </body>
+</html>
