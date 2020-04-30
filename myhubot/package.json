@@ -16,7 +16,7 @@
     "hubot-redis-brain": "^1.0.0",
     "hubot-rules": "^1.0.0",
     "hubot-slack": "^4.7.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "yo": "^2.0.6"
   },
   "devDependencies": {},
